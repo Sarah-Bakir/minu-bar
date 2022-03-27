@@ -1,0 +1,108 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: #ffffff;
+}
+body{
+	background-image: url(1.png);
+	background-size: cover width="30"  height="50";
+	box-sizing: border-box;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.minu-bar{
+	background-color: #CD5C5C;
+	text-align: center;
+}
+.minu-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.minu-bar ul li{
+	width: 100px;
+	margin: 5px;
+	padding: 10px;
+}
+.minu-bar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.s, .minu-bar ul li:hover{
+	background:#F08080;
+	border-radius: 10px;
+}.sara-bakir{
+	display: none;
+}
+.minu-bar ul li:hover .sara-bakir{
+	display: block;
+	position: absolute;
+	background-color: #CD5C5C;
+	margin-top: 10px;
+	margin-left: -10px;
+}
+.minu-bar ul li:hover .sara-bakir ul{
+	display: block;
+	margin: 10px;
+}
+.minu-bar ul li:hover .sara-bakir ul li{
+	width: 100px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background:transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.minu-bar ul li:hover .sara-bakir ul li a:hover{
+	color: #F08080;
+}
+.fa-angle-right{
+	float: right;
+}
+.sara-bakir-2{
+	display: none;
+}
+.hover-me:hover .sara-bakir-2{
+	position: absolute;
+	display: block;
+	margin-left: 140px;
+	margin-top: -40px;
+	background-color:#CD5C5C;
+}
+  .social-buttons a{
+	display: inline-flex;
+	text-decoration: none;
+	font-size: 18px;
+	width: 60px;
+	height: 60px;
+	color: #fffffff;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 0 8px;
+  }
+  
+  .social-buttons a::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: linear-gradient(45deg,#F08080,#CD5C5C);
+	border-radius: 50%;
+	z-index: -1;
+	transition: 0.3s ease-in;
+  }
+  
+  .social-buttons a:hover::before{
+	transform: scale(0);
+  }
+  
+  .social-buttons a i{
+	transition: 0.3s ease-in;
+  }
+  
+  .social-buttons a:hover i{
+	background: linear-gradient(45deg,black,black);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transform: scale(2.2);
+  }
